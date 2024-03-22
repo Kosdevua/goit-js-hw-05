@@ -5,7 +5,7 @@
 // Функція має повертати масив усіх користувачів із масиву users, у яких є друг з іменем friendName. Друзі кожного користувача зберігаються у властивості friends. Якщо користувачів, у яких є такий других немає, то функція має повернути порожній масив.
 
 const getUsersWithFriend = (users, friendName) => {
-  return users.filter((user) => user.friends === friendName);
+  return users.filter((user) => user.friends.includes(friendName));
 };
 
 const allUsers = [
